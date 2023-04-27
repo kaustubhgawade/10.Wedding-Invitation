@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <title>Wedding Invitation</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#jane-john">Shreya & Hritik</a>
+        <a href="#wedding">WEDDING</a>
+        <a href="#rsvp">Your Response</a>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="fixed-box">
+        <p class="fixed-inner-box"><span id="days-left"></span> days left!!!</p>
+      </div>
+      <div id="home">
+        <img src="./img/wedding_couple.jpg" alt="Jane & John" class="home-img" />
+        <div class="home-css">
+          <p class="home-name">Shreya & Hritik</p>
+          <p class="home-info">Are getting married</p>
+          <p class="home-date">01.08.2022</p>
+        </div>
+      </div>
+      <div id="jane-john">
+        <div class="inner-content">
+          <p class="jj-name">Shreya & Hritik</p>
+          <img
+            src="./img/wedding_couple2.jpg"
+            alt="Jane and John"
+            class="jj-img"
+          />
+          <p class="jj-info">
+            You all know us. And we all know you. We are getting married Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt
+            eveniet, esse doloribus debitis maiores veritatis facere facilis
+            atque reiciendis error recusandae deleniti porro inventore
+            asperiores, fugiat placeat dolore quisquam voluptate corporis.
+            Mollitia explicabo deleniti ea expedita quisquam, tempora provident
+            labore reiciendis impedit numquam officiis tenetur itaque iusto
+            ipsam animi!
+          </p>
+          <button class="jj-btn">Wedding Details</button>
+        </div>
+        <div id="invitation">
+          <img src="./img/flowers.jpg" alt="flowers" class="invitation-img" />
+          <div class="inv-inner-content">
+            <p class="invite-head">You Are Invited</p>
+            <p class="invite-foot">Of Course..</p>
+          </div>
+        </div>
+      </div>
+      <div id="wedding">
+        <div class="inner-content">
+          <p class="wedding-name">THE WEDDING</p>
+          <img
+            src="./img/wedding_location.jpg"
+            alt="wedding location"
+            class="wedding-img"
+          />
+          <div class="address-time">
+            <div class="addr-time">
+              <p class="at-head">WHEN</p>
+              <p class="at-info">Wedding Ceremony - 2:00pm</p>
+              <p class="at-info">Reception & Dinner - 5:00pm</p>
+            </div>
+            <div class="addr-time">
+              <p class="at-head">WHERE</p>
+              <p class="at-info">Angel Hall, 42nd Ford Street</p>
+              <p class="at-info">New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="rsvp">
+        <p class="rsvp-name">HOPE YOU CAN MAKE IT!</p>
+        <p class="rsvp-date">Kindly Respond By June, 2022</p>
+        <button class="rsvp-btn" onclick="openFloatingBox()">RESPONSE</button>
+        <div id="floating-box">
+          <p class="box-head">CAN YOU COME?</p>
+          <p class="box-info">We really hope you can make it.</p>
+          <form action="get">
+            <label for="name">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name(s)"
+              />
+            </label>
+          </form>
+          <p class="box-info">Sincerely, Shreya & Hritik</p>
+          <div class="box-btns">
+            <button class="going" onclick="closeFloatingBox()">Going</button>
+            <button class="not-going" onclick="closeFloatingBox()">
+              Can't Come
+            </button>
+          </div>
+        </div>  
+      </div>
+    </main>
+    <footer>
+      <p>Organised by Kaustubh Corporation</p>
+      <p>&copy; | 2002 - <span id="incr-num"></span></p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+/* 2000px */
+@media screen and (min-width: 2000px) {
+  .home-name {
+    font-size: 100px;
+  }
+  .home-info {
+    font-size: 50px;
+  }
+  .home-date {
+    font-size: 40px;
+  }
+  .jj-name,
+  .wedding-name {
+    font-size: 70px;
+  }
+  .jj-info{
+    font-size: 30px;
+  }
+  .jj-btn{
+    font-size: 30px;
+    width: 300px;
+  }
+  .invite-head{
+    font-size: 100px;
+  }
+  .invite-foot{
+    font-size: 50px;
+  }
+  .at-head{
+    font-size: 50px;
+  }
+  .at-info{
+    font-size: 30px;
+  }
+}
+
+/* 1440px */
+@media screen and (max-width: 1440px) {
+  .inner-content {
+    width: 90%;
+  }
+}
+/* 700px */
+@media screen and (max-width: 700px) {
+  #floating-box {
+    width: 300px;
+  }
+  .box-btns {
+    flex-direction: column;
+  }
+  .going,
+  .not-going {
+    width: 100%;
+  }
+}
+/* 600px */
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .address-time {
+    flex-direction: column;
+  }
+  .addr-time {
+    width: 100%;
+  }
+}
+/* 425px */
+@media screen and (max-width: 880px) {
+  .jj-btn {
+    width: 150px;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: palevioletred;
+}
+::-webkit-scrollbar-track {
+  /* background-color: yellow; */
+  box-shadow: inset 2px 2px 5px pink;
+}
